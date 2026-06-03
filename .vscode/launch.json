@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug MyRecipeBook.Api",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/MyRecipeBook.Api/bin/Debug/net10.0/MyRecipeBook.Api.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/MyRecipeBook.Api",
+            "stopAtEntry": false,
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}/swagger",
+                "linux": {
+                    "command": "xdg-open",
+                    "args": "${auto-detect-url}/swagger"
+                }
+            }
+        }
+    ]
+}
